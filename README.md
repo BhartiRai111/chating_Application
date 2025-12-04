@@ -1,68 +1,76 @@
-# chating_Application 💬
 
-A full-stack chat application built with React (frontend) and Node/Express (backend).  
-It allows real-time or near real-time messaging (private or group chat), user registration/login, message storage — all packaged together in one project.
+Welcome to my Chat Application! This project is a full-fledged realtime messaging application with a user interface 
+inspired by WhatsApp. It enables users to exchange messages individually or within groups.
 
----
+![image Screenshot](./images/homepage.png)
 
-## 🧰 Tech Stack
 
-- **Frontend:** React (JavaScript/ TypeScript / your choice)  
-- **Backend:** Node.js + Express.js  
-- **Database:** (if you’re using any — e.g. MongoDB / MySQL / PostgreSQL — mention here)  
-- **Other:** Any libraries or tools you use (e.g. socket.io, bcrypt, cors, dotenv, etc.)
+## Features
 
----
+- **Realtime Messaging:** Experience seamless, real-time messaging with instant message delivery.
+- **Individual Messaging:** Send private messages to other users.
+- **Group Messaging:** Create and edit groups to communicate with more than one user.
+- **Login And Signup:** Securely access the application with a login and signup system.
 
-## ✨ Features
+## Technologies
 
-- User registration & login  
-- Real-time or near real-time chat (private or group)  
-- Frontend + backend separation (clean architecture)  
-- Easy to setup & run locally  
-- (Optional — add any extra feature you added: e.g. “typing indicator”, “read receipts”, “message history”, “image upload”, etc.)
+- **Frontend:** Typescript with React
+- **Backend:** Java with Spring Boot, Spring Security, Spring Websocket and Spring Data JPA
+- **Database:** PostgreSQL
+- **Authentication:** JSON Web Token (JWT)
+- **State Management:** Redux, Thunk
+- **Component Library:** Material UI
 
----
+## Getting Started
 
-## 📁 Project Structure
+### Prerequisites
 
-```
-chating_Application/
- ├── frontend/    ← React frontend source
- └── backend/     ← Node/Express backend source (API + business logic)
-```
+Ensure you have **npm** and **mvn** installed on your machine.
 
----
 
 ## 🚀 Setup & Run (Local Development)
 
 > Make sure you have Node.js and npm installed on your system.
 
-### 1. Clone the repository  
-```bash
-git clone https://github.com/YourGitHubUserName/chating_Application.git
-cd chating_Application
-```
 
-### 2. Backend setup  
-```bash
-cd backend
-npm install
-# configure environment variables if any (e.g. .env)
-npm start        # or npm run dev (if you have nodemon setup)
-```
+### Installation
 
-### 3. Frontend setup  
-Open a new terminal/tab:
-```bash
-cd frontend
-npm install
-npm start
-```
+1. **Clone the repository:**  
+    ```bash  
+    git clone https://github.com/nicolasjusten95/chat-app.git
+    ```
+   
+2. **Navigate to the Frontend and install the required dependencies:**  
+    ```bash
+    cd frontend
+    npm install
+    ```
+   
+3. **Navigate to the Backend and install the required dependencies:**  
+    ```bash
+    cd backend
+    mvn clean install
+    ```
+   
+4. **Configure Environment Variables:**  
+   Configure the Spring Boot application.properties for database and other configurations.
 
-Your frontend should now run (by default at `http://localhost:3000`) and will connect to the backend server (e.g. at `http://localhost:5000`, depending on how you configured it).
+5. **Run the Application:**
+    - Start the frontend:
+      ```bash
+      npm start
+      ```
+    - Start the backend:
+      ```bash
+      mvn spring-boot:run
+      ```
 
----
+6. **Access the Application:**
+   - Open your browser and visit [http://localhost:3000](http://localhost:3000) to use the Realtime Chat Application.
+   - You can log in with a sample user to access the app with predefined data:
+     - email: luke.skywalker@test.com
+     - password: luke
+   - Or you can create your own Accounts and start chatting!
 
 ## ✅ Usage
 
@@ -73,6 +81,31 @@ Your frontend should now run (by default at `http://localhost:3000`) and will co
 5. (If included) Enjoy extra features: group chat, user presence, message history, etc.
 
 ---
+
+## Images
+
+View your chats with other users:
+![image Screenshot](./images/homepage.png)
+
+Send messages to other users:
+![image Screenshot](./images/send_messages.png)
+
+Log into your account:
+![image Screenshot](./images/signin.png)
+
+Create a new account:
+![image Screenshot](./images/signup.png)
+
+Start a new chat:
+![image Screenshot](./images/start_new_group_chat.png)
+
+Edit your chats:
+![image Screenshot](./images/edit_group_chat.png)
+
+## Contribution Guidelines
+
+I welcome contributions! If you have ideas for improvements or new features, feel free to open an issue or submit a pull request.
+
 
 ## 📝 Why This Project?
 
@@ -96,11 +129,7 @@ It can also be used as a boilerplate for future chat-based projects (support roo
 
 ## 🙋 Author / Maintainer
 
-**Your Name** — developer & maintainer  
+**Bharti Rai** — developer & maintainer  
 Feel free to open issues or contribute!  
 
 ---
-
-## 📄 License
-
-Specify a license (e.g. MIT, Apache 2.0) or leave as is — depending on how you want to share the code.  
