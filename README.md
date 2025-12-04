@@ -37,7 +37,7 @@ Ensure you have **npm** and **mvn** installed on your machine.
 
 1. **Clone the repository:**  
     ```bash  
-    git clone https://github.com/nicolasjusten95/chat-app.git
+    git clone https://github.com/BhartiRai111/chating_Application.git
     ```
    
 2. **Navigate to the Frontend and install the required dependencies:**  
